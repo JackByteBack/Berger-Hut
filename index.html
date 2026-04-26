@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berger Hut — Crafted to Perfection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <header id="header">
+    <div class="logo">
+      <img src="WhatsApp Image 2026-04-26 at 13.49.37 (2).jpeg" alt="Berger Hut Logo">
+      <div>
+        <div class="logo-text">Berger Hut</div>
+        <div class="logo-sub">Crafted to Perfection</div>
+      </div>
+    </div>
+    <nav id="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#reservations" class="nav-cta">Reserve a Table</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-slides">
+      <div class="hero-slide active"></div>
+      <div class="hero-slide"></div>
+      <div class="hero-slide"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-label">Est. 2024 &middot; Mumbai</div>
+      <h1>Taste the<br><em>Art of the Burger</em></h1>
+      <p class="hero-sub">Gourmet burgers crafted from locally sourced ingredients, served in a bold and rustic atmosphere.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn-primary"><i class="fas fa-utensils"></i> Explore Menu</a>
+        <a href="#reservations" class="btn-outline"><i class="far fa-calendar-alt"></i> Reserve Table</a>
+      </div>
+    </div>
+    <div class="hero-dots" id="heroDots">
+      <div class="hero-dot active" onclick="goSlide(0)"></div>
+      <div class="hero-dot" onclick="goSlide(1)"></div>
+      <div class="hero-dot" onclick="goSlide(2)"></div>
+    </div>
+    <div class="hero-scroll">Scroll</div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-image-side reveal">
+      <img src="WhatsApp Image 2026-04-26 at 13.49.36.jpeg" alt="Interior">
+    </div>
+    <div class="about-text">
+      <div class="section-tag reveal">Our Story</div>
+      <h2 class="section-title reveal">Passion Stacked<br>Between Two Buns</h2>
+      <div class="section-line reveal"></div>
+      <p class="reveal">At Berger Hut, we believe a great burger is more than food — it's an experience. Every patty is seasoned to perfection, every bun baked fresh, and every sauce crafted in-house.</p>
+      <p class="reveal reveal-delay-1">Our chefs bring restaurant-level technique to comfort food, sourcing ingredients from local farms and blending flavors that surprise and delight.</p>
+      <div class="about-stats reveal reveal-delay-2">
+        <div class="stat"><div class="stat-num">12+</div><div class="stat-label">Signature Recipes</div></div>
+        <div class="stat"><div class="stat-num">4.9&#9733;</div><div class="stat-label">Avg. Rating</div></div>
+        <div class="stat"><div class="stat-num">10K+</div><div class="stat-label">Happy Customers</div></div>
+      </div>
+      <a href="#menu" class="btn-primary reveal reveal-delay-3" style="align-self:flex-start;"><i class="fas fa-arrow-right"></i> View Our Menu</a>
+    </div>
+  </section>
+
+  <section class="menu-section" id="menu">
+    <div class="menu-header">
+      <div class="section-tag reveal">What We Serve</div>
+      <h2 class="section-title reveal">Our Signature <em>Burgers</em></h2>
+      <div class="section-line reveal"></div>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-card reveal">
+        <div class="menu-card-img">
+          <span class="menu-badge">Best Seller</span>
+          <img src="WhatsApp Image 2026-04-26 at 13.49.35.jpeg" alt="Classic Cheeseburger">
+        </div>
+        <div class="menu-card-body">
+          <h3>Classic Cheeseburger</h3>
+          <p>Juicy beef patty with melted cheddar, fresh lettuce, heirloom tomato, and our secret smoky sauce. Served with crispy fries.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">&#8377;249</span>
+            <button class="menu-order"><i class="fas fa-plus"></i> Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card reveal reveal-delay-1">
+        <div class="menu-card-img">
+          <span class="menu-badge veggie">Veggie</span>
+          <img src="WhatsApp Image 2026-04-26 at 13.49.36 (1).jpeg" alt="Veggie Delight">
+        </div>
+        <div class="menu-card-body">
+          <h3>Veggie Delight</h3>
+          <p>A garden-fresh veggie patty with avocado, sprouts, and tangy herb mayo. Served with sweet potato fries and a fresh slaw.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">&#8377;219</span>
+            <button class="menu-order"><i class="fas fa-plus"></i> Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card reveal reveal-delay-2">
+        <div class="menu-card-img">
+          <span class="menu-badge spicy">&#128293; Spicy</span>
+          <img src="WhatsApp Image 2026-04-26 at 13.49.36 (2).jpeg" alt="Spicy BBQ">
+        </div>
+        <div class="menu-card-body">
+          <h3>Spicy BBQ Burger</h3>
+          <p>Flame-grilled chicken smothered in spicy BBQ sauce with jalape&ntilde;os, crispy onion rings, and chipotle mayo. Pure fire.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">&#8377;279</span>
+            <button class="menu-order"><i class="fas fa-plus"></i> Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="banner reveal">
+    <div class="banner-text">
+      <h2>Daily Special <span>50% Off</span><br>Every Wednesday</h2>
+      <p>Join us every Wednesday for our legendary half-price special. Dine in or order online &mdash; your choice.</p>
+    </div>
+    <a href="#reservations" class="btn-primary reveal reveal-delay-1"><i class="fas fa-tag"></i> Claim Your Offer</a>
+  </div>
+
+  <section class="testimonials-section" id="testimonials">
+    <div class="testimonials-header">
+      <div class="section-tag reveal">What People Say</div>
+      <h2 class="section-title reveal">Loved by <em>Thousands</em></h2>
+      <div class="section-line reveal"></div>
+    </div>
+    <div class="testimonials-slider reveal">
+      <div class="testimonials-track" id="testimonialTrack">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"The burgers at Berger Hut are absolutely incredible. Rich flavors, always fresh. My go-to place whenever I crave something truly delicious."</p>
+          <div class="testimonial-author">
+            <img src="WhatsApp Image 2026-04-26 at 13.49.36.jpeg" alt="Arjun">
+            <div><div class="author-name">Arjun Sharma</div><div class="author-role">Regular since 2024</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"Berger Hut never disappoints! The quality and friendly service make it a top-notch dining experience. Highly recommend to all burger lovers!"</p>
+          <div class="testimonial-author">
+            <img src="WhatsApp Image 2026-04-26 at 13.49.37 (1).jpeg" alt="Priya">
+            <div><div class="author-name">Priya Mehta</div><div class="author-role">Food Blogger</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"Best burger in Mumbai, hands down. The Spicy BBQ is a masterpiece. I drive 30 minutes just to eat here. Worth every rupee."</p>
+          <div class="testimonial-author">
+            <img src="WhatsApp Image 2026-04-26 at 13.49.37 (1).jpeg" alt="Rahul">
+            <div><div class="author-name">Rahul Verma</div><div class="author-role">Foodie &amp; Regular</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"The ambiance is cozy, staff welcoming, burgers out-of-this-world. Berger Hut has completely ruined every other burger for me."</p>
+          <div class="testimonial-author">
+            <img src="WhatsApp Image 2026-04-26 at 13.49.36.jpeg" alt="Ananya">
+            <div><div class="author-name">Ananya Joshi</div><div class="author-role">First-time visitor turned fan</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button class="slider-btn" id="tPrev"><i class="fas fa-arrow-left"></i></button>
+      <button class="slider-btn" id="tNext"><i class="fas fa-arrow-right"></i></button>
+    </div>
+  </section>
+
+  <section class="gallery-section" id="gallery">
+    <div class="gallery-header">
+      <div class="section-tag reveal">Visual Feast</div>
+      <h2 class="section-title reveal">Our Gallery</h2>
+      <div class="section-line reveal"></div>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal"><img src="WhatsApp Image 2026-04-26 at 13.49.37.jpeg" alt="g1"><div class="gallery-overlay"><i class="fas fa-expand-alt"></i></div></div>
+      <div class="gallery-item reveal reveal-delay-1"><img src="WhatsApp Image 2026-04-26 at 13.49.35.jpeg" alt="g2"><div class="gallery-overlay"><i class="fas fa-expand-alt"></i></div></div>
+      <div class="gallery-item reveal reveal-delay-2"><img src="WhatsApp Image 2026-04-26 at 13.49.35 (1).jpeg" alt="g3"><div class="gallery-overlay"><i class="fas fa-expand-alt"></i></div></div>
+      <div class="gallery-item reveal reveal-delay-1"><img src="WhatsApp Image 2026-04-26 at 13.49.36 (1).jpeg" alt="g4"><div class="gallery-overlay"><i class="fas fa-expand-alt"></i></div></div>
+      <div class="gallery-item reveal reveal-delay-2"><img src="WhatsApp Image 2026-04-26 at 13.49.36 (2).jpeg" alt="g5"><div class="gallery-overlay"><i class="fas fa-expand-alt"></i></div></div>
+    </div>
+  </section>
+
+  <section class="reservation-section" id="reservations">
+    <div class="reservation-info">
+      <div class="section-tag reveal">Book a Spot</div>
+      <h2 class="section-title reveal">Reserve<br>Your Table</h2>
+      <div class="section-line reveal"></div>
+      <p class="reveal">Experience the full Berger Hut atmosphere. Book for dine-in, special events, or group bookings. We'd love to host you.</p>
+      <div class="contact-items reveal">
+        <div class="contact-item"><div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div><div class="contact-item-text">123 Main Street, Mumbai, Maharashtra</div></div>
+        <div class="contact-item"><div class="contact-item-icon"><i class="fas fa-phone-alt"></i></div><div class="contact-item-text">+91 98765 43210</div></div>
+        <div class="contact-item"><div class="contact-item-icon"><i class="fas fa-envelope"></i></div><div class="contact-item-text">hello@bergerhut.in</div></div>
+        <div class="contact-item"><div class="contact-item-icon"><i class="fas fa-clock"></i></div><div class="contact-item-text">Mon&ndash;Sun: 11:00 AM &ndash; 11:00 PM</div></div>
+      </div>
+    </div>
+    <div class="reservation-form-wrap reveal">
+      <h3>Make a Reservation</h3>
+      <div class="form-row">
+        <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your name"></div>
+        <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Phone</label><input type="tel" placeholder="+91"></div>
+        <div class="form-group"><label>Guests</label>
+          <select><option>1 Person</option><option>2 People</option><option>3&ndash;4 People</option><option>5+ People</option></select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Date</label><input type="date"></div>
+        <div class="form-group"><label>Time</label><input type="time"></div>
+      </div>
+      <div class="form-group"><label>Special Requests</label><textarea placeholder="Allergies, occasions, preferences..."></textarea></div>
+      <button class="form-submit">Confirm Reservation <i class="fas fa-arrow-right" style="margin-left:8px;"></i></button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">Berger Hut</div>
+        <p>Experience the finest gourmet burgers crafted with love and locally-sourced ingredients. Every bite tells a story.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Our Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reservations">Reservations</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Our Menu</h4>
+        <ul>
+          <li><a href="#">Classic Cheeseburger</a></li>
+          <li><a href="#">Veggie Delight</a></li>
+          <li><a href="#">Spicy BBQ Burger</a></li>
+          <li><a href="#">Double Stack</a></li>
+          <li><a href="#">Sides &amp; Fries</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>123 Main Street<br>Mumbai, Maharashtra<br>India 400001<br><br>+91 98765 43210<br>hello@bergerhut.in</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 <span class="highlight">Berger Hut</span>. All rights reserved.</span>
+      <span>Made with <span class="heart">&#9829;</span> in Mumbai</span>
+    </div>
+  </footer>
+
+  <script>
+    const cursor = document.getElementById('cursor');
+    const ring   = document.getElementById('cursorRing');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX+'px'; cursor.style.top = e.clientY+'px';
+      setTimeout(() => { ring.style.left = e.clientX+'px'; ring.style.top = e.clientY+'px'; }, 60);
+    });
+    document.querySelectorAll('a,button').forEach(el => {
+      el.addEventListener('mouseenter', () => { ring.style.width='54px'; ring.style.height='54px'; ring.style.opacity='.4'; });
+      el.addEventListener('mouseleave', () => { ring.style.width='36px'; ring.style.height='36px'; ring.style.opacity='.6'; });
+    });
+
+    window.addEventListener('scroll', () => {
+      document.getElementById('header').classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('nav').classList.toggle('open');
+    });
+
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots   = document.querySelectorAll('.hero-dot');
+    let current  = 0;
+    function goSlide(n) {
+      slides[current].classList.remove('active'); dots[current].classList.remove('active');
+      current = (n + slides.length) % slides.length;
+      slides[current].classList.add('active'); dots[current].classList.add('active');
+    }
+    setInterval(() => goSlide(current + 1), 5000);
+
+    const track = document.getElementById('testimonialTrack');
+    let tIdx = 0;
+    function cardW() { const c = document.querySelector('.testimonial-card'); return c ? c.offsetWidth + 28 : 0; }
+    function updateTrack() { track.style.transform = 'translateX(-'+(tIdx*cardW())+'px)'; }
+    document.getElementById('tNext').addEventListener('click', () => {
+      const total = document.querySelectorAll('.testimonial-card').length;
+      tIdx = (tIdx+1)%(total-1); updateTrack();
+    });
+    document.getElementById('tPrev').addEventListener('click', () => {
+      const total = document.querySelectorAll('.testimonial-card').length;
+      tIdx = (tIdx-1+total-1)%(total-1); updateTrack();
+    });
+    window.addEventListener('resize', updateTrack);
+
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const t = document.querySelector(a.getAttribute('href'));
+        if(t) t.scrollIntoView({ behavior:'smooth', block:'start' });
+        document.getElementById('nav').classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>
